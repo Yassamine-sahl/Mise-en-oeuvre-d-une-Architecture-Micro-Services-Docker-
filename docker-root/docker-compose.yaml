@@ -1,0 +1,53 @@
+version: '3'
+services:
+  eureka-service:
+    build: eureka-service/
+    hostname: eureka-service
+    ports:
+      - "8761:8761"
+    networks:
+      - default-network
+
+  openlab-customer-service:
+    build: customer-service/
+    hostname: openlab-customer-service
+    ports:
+      - "8082:8082"
+    depends_on:
+      - eureka-service
+    environment:
+      - eureka.client.service-url.defaultZone=http://eureka-service:8761/eureka
+    networks:
+      - default-network
+
+  enset-billing-service:
+    build: billing-service/
+    hostname: enset-billing-service
+    ports:
+      - "8083:8083"
+    restart: on-failure
+    depends_on:
+      - openlab-customer-service
+      - eureka-service
+    environment:
+      - eureka.client.service-url.defaultZone=http://eureka-service:8761/eureka
+    networks:
+      - default-network
+
+  gateway:
+    build: gateway/
+    hostname: gateway
+    ports:
+      - "9999:9999"
+    depends_on:
+      - openlab-customer-service
+      - enset-billing-service
+      - eureka-service
+    environment:
+      - eureka.client.service-url.defaultZone=http://eureka-service:8761/eureka
+    networks:
+      - default-network
+
+networks:
+  default-network:
+    driver: bridge

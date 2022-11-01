@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/Downloads/openlab-customer-service/openlab-customer-service/CustomerService.iml" filepath="$USER_HOME$/Downloads/openlab-customer-service/openlab-customer-service/CustomerService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mise-en-oeuvre-d-une-Architecture-Micro-Services-Docker-/adria-eureka-services/adria-eureka-services.iml" filepath="$PROJECT_DIR$/../Mise-en-oeuvre-d-une-Architecture-Micro-Services-Docker-/adria-eureka-services/adria-eureka-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mise-en-oeuvre-d-une-Architecture-Micro-Services-Docker-/adria-gateway/adria-gateway.iml" filepath="$PROJECT_DIR$/../Mise-en-oeuvre-d-une-Architecture-Micro-Services-Docker-/adria-gateway/adria-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/docker-root.iml" filepath="$PROJECT_DIR$/docker-root.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mise-en-oeuvre-d-une-Architecture-Micro-Services-Docker-/enset-billing-services/enset-billing-services.iml" filepath="$PROJECT_DIR$/../Mise-en-oeuvre-d-une-Architecture-Micro-Services-Docker-/enset-billing-services/enset-billing-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../openlab-customer-services/openlab-customer-services.iml" filepath="$PROJECT_DIR$/../openlab-customer-services/openlab-customer-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../openlab-customer-services/openlab-customer-services (1).iml" filepath="$PROJECT_DIR$/../openlab-customer-services/openlab-customer-services (1).iml" />
+    </modules>
+  </component>
+</project>
